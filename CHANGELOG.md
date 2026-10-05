@@ -3,6 +3,24 @@
 All notable, user-facing changes to AgentBox are documented here, in the style of
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Nothing older than 0.3.0 is listed.
 
+## [0.12.0](https://github.com/leciric/agentbox/compare/v0.11.0...v0.12.0) (2026-10-05)
+
+
+### Added
+
+* agentbox machines mcp gives Claude Code and Codex on your computer a desktop machine to test in ([#181](https://github.com/leciric/agentbox/issues/181)) ([4f2d2d0](https://github.com/leciric/agentbox/commit/4f2d2d0ed5b3a582e29f96b849fbdc66f8321d87))
+* agentbox machines serve opens a local web page to browse every screenshot and recording ([#180](https://github.com/leciric/agentbox/issues/180)) ([a70d9d3](https://github.com/leciric/agentbox/commit/a70d9d34109f142f8970695bd4f626b8d826c32d))
+* agents from every project share the VM's memory: a create that doesn't fit waits, and tests and builds take a share of it when they run ([#171](https://github.com/leciric/agentbox/issues/171)) ([f5290c6](https://github.com/leciric/agentbox/commit/f5290c63768967600e90d78dfe08763ed9a4345a))
+* agents share one package cache, so dependencies and browsers are downloaded once ([#169](https://github.com/leciric/agentbox/issues/169)) ([d6b8821](https://github.com/leciric/agentbox/commit/d6b8821702db7f577f7a1f789bab18493f0ea0a3))
+* projects can be named anything, with spaces, capitals or any character ([#172](https://github.com/leciric/agentbox/issues/172)) ([81d2611](https://github.com/leciric/agentbox/commit/81d2611479072b0255dd1914aacc65489ad2dead))
+
+
+### Fixed
+
+* agents no longer wait for memory the VM has free, and a queued agent can be started now ([#175](https://github.com/leciric/agentbox/issues/175)) ([82fdad2](https://github.com/leciric/agentbox/commit/82fdad20e9d8483eb744092e24ef835f4218b8dc))
+* agents' turns end when you message them while their background subagents run ([#176](https://github.com/leciric/agentbox/issues/176)) ([06875d0](https://github.com/leciric/agentbox/commit/06875d007e426d276534c00d39165829a0908979))
+* telling a stopped or paused agent starts its machine first, and waits for memory when the VM has none ([#173](https://github.com/leciric/agentbox/issues/173)) ([02ddf90](https://github.com/leciric/agentbox/commit/02ddf90653a82e759b5fd674b88e5d56dd89b8bb))
+
 ## [0.11.0](https://github.com/leciric/agentbox/compare/v0.10.0...v0.11.0) (2026-10-02)
 
 
