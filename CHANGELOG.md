@@ -3,6 +3,32 @@
 All notable, user-facing changes to AgentBox are documented here, in the style of
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Nothing older than 0.3.0 is listed.
 
+## [0.12.0](https://github.com/leciric/agentbox/compare/v0.11.0...v0.12.0) (2026-10-05)
+
+
+### Added
+
+* a speaker under the agent's replies reads one aloud again ([#189](https://github.com/leciric/agentbox/issues/189)) ([b72399b](https://github.com/leciric/agentbox/commit/b72399ba0706758e488eee8197f4a1ac21d6750d))
+* agentbox machines mcp gives Claude Code and Codex on your computer a desktop machine to test in ([#181](https://github.com/leciric/agentbox/issues/181)) ([4f2d2d0](https://github.com/leciric/agentbox/commit/4f2d2d0ed5b3a582e29f96b849fbdc66f8321d87))
+* agentbox machines serve opens a local web page to browse every screenshot and recording ([#180](https://github.com/leciric/agentbox/issues/180)) ([a70d9d3](https://github.com/leciric/agentbox/commit/a70d9d34109f142f8970695bd4f626b8d826c32d))
+* agentbox machines serve shows each machine's desktop live, with start, stop and take control ([#182](https://github.com/leciric/agentbox/issues/182)) ([501027b](https://github.com/leciric/agentbox/commit/501027b157d3fc8c730a631b7f23e31bab3b4b24))
+* agents checkpoint every turn, and can be rolled back or forked from any of them ([#185](https://github.com/leciric/agentbox/issues/185)) ([3a52003](https://github.com/leciric/agentbox/commit/3a52003135a2155a92fe9b35c121c16865bd279b))
+* agents from every project share the VM's memory: a create that doesn't fit waits, and tests and builds take a share of it when they run ([#171](https://github.com/leciric/agentbox/issues/171)) ([f5290c6](https://github.com/leciric/agentbox/commit/f5290c63768967600e90d78dfe08763ed9a4345a))
+* agents share one package cache, so dependencies and browsers are downloaded once ([#169](https://github.com/leciric/agentbox/issues/169)) ([d6b8821](https://github.com/leciric/agentbox/commit/d6b8821702db7f577f7a1f789bab18493f0ea0a3))
+* desktop machines operate the app with a real pointer and keyboard, with the dock back on their desktop ([#183](https://github.com/leciric/agentbox/issues/183)) ([33a0750](https://github.com/leciric/agentbox/commit/33a0750ec3486d7473e9893619260171b939482d))
+* projects can be named anything, with spaces, capitals or any character ([#172](https://github.com/leciric/agentbox/issues/172)) ([81d2611](https://github.com/leciric/agentbox/commit/81d2611479072b0255dd1914aacc65489ad2dead))
+* SnapShots send a window to a chat as a bug report, and projects import browser cookies from an export ([#186](https://github.com/leciric/agentbox/issues/186)) ([cb34d13](https://github.com/leciric/agentbox/commit/cb34d1309f8a6d40333a81de2e4f76d568707f56))
+
+
+### Fixed
+
+* agent recordings are made in one pass and saved the moment they stop ([#188](https://github.com/leciric/agentbox/issues/188)) ([11d899c](https://github.com/leciric/agentbox/commit/11d899c3204ece30ec7f779ba148f7c9b1cc4296))
+* agents no longer wait for memory the VM has free, and a queued agent can be started now ([#175](https://github.com/leciric/agentbox/issues/175)) ([82fdad2](https://github.com/leciric/agentbox/commit/82fdad20e9d8483eb744092e24ef835f4218b8dc))
+* agents' turns end when you message them while their background subagents run ([#176](https://github.com/leciric/agentbox/issues/176)) ([06875d0](https://github.com/leciric/agentbox/commit/06875d007e426d276534c00d39165829a0908979))
+* Chromium no longer asks to restore pages after a machine stops ([#184](https://github.com/leciric/agentbox/issues/184)) ([dcb9d89](https://github.com/leciric/agentbox/commit/dcb9d897f2b90b6a92174a2d5b92008d36c4b805))
+* package-cache tests no longer leak the agent's environment ([#187](https://github.com/leciric/agentbox/issues/187)) ([3c90763](https://github.com/leciric/agentbox/commit/3c90763c20ba544a54160ab3cbf998f54cb53fad))
+* telling a stopped or paused agent starts its machine first, and waits for memory when the VM has none ([#173](https://github.com/leciric/agentbox/issues/173)) ([02ddf90](https://github.com/leciric/agentbox/commit/02ddf90653a82e759b5fd674b88e5d56dd89b8bb))
+
 ## [0.11.0](https://github.com/leciric/agentbox/compare/v0.10.0...v0.11.0) (2026-10-02)
 
 
